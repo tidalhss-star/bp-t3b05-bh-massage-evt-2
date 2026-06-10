@@ -1,135 +1,387 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko-KR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>우리의 가치 - 방화 마사지 안심 매칭 센터 | 방화 마사지 이벤트</title>
-  <meta name="description" content="방화역 개화산 밤거리의 뽀송한 안심 위생 보건을 위해 발로 뛰는 마사지 정보 매칭 팀 소개. 010-6279-0862 예약 핫라인의 가치.">
-  <meta name="keywords" content="방화 마사지 이벤트, 방화 마사지, 방화역 마사지">
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-royal-blue">
-  <link rel="canonical" href="https://t3b05-bh-massage-evt-2.pages.dev/about.html">
-  <style>
-    :root {
-      --glass-bg: rgba(10, 15, 30, 0.9);
-      --glass-card: rgba(17, 24, 43, 0.7);
-      --glass-border: rgba(255, 255, 255, 0.08);
-      --neon-blue: #3b82f6;
-      --neon-cyan: #06b6d4;
-      --text-light: #f8fafc;
-      --text-muted: #94a3b8;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #030712 100%);
-      color: var(--text-light);
-      font-family: 'Inter', 'Pretendard', sans-serif;
-      line-height: 1.8;
-      padding: 0 20px;
-    }
-    .royal-glass {
-      max-width: 900px;
-      margin: 40px auto;
-      background: var(--glass-bg);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid var(--glass-border);
-      border-radius: 24px;
-      padding: 50px 40px;
-      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-    }
-    .bold-title {
-      font-size: 2.4rem;
-      font-weight: 900;
-      line-height: 1.25;
-      background: linear-gradient(135deg, #ffffff, var(--neon-cyan));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 20px;
-    }
-    .text-container {
-      font-size: 1.1rem;
-      color: #cbd5e1;
-    }
-    .text-container p {
-      margin-bottom: 24px;
-    }
-    .review-bubble {
-      background: rgba(255,255,255,0.02);
-      border: 1px solid var(--glass-border);
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 16px;
-    }
-    .review-bubble h5 {
-      color: var(--neon-cyan);
-      margin-bottom: 6px;
-      font-size: 1.05rem;
-    }
-    .review-bubble p {
-      font-size: 0.95rem;
-      color: #cbd5e1;
-    }
-    footer {
-      border-top: 1px solid var(--glass-border);
-      padding-top: 30px;
-      margin-top: 60px;
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-    footer a {
-      color: var(--text-light);
-      text-decoration: none;
-      margin: 0 8px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="방화 마사지 이벤트 상세 정보! 가격, 코스, 예약 혜택까지 모두 공개. 형님들 여기 진짜 개운합니다. 방화동 마사지 No.1">
+    <meta name="keywords" content="방화 마사지, 방화 마사지 이벤트, 방화동 마사지, 방화 마사지 가격, 방화 마사지 코스, 방화 전신 마사지, 방화 스웨디시, 방화 마사지 예약">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b05-bh-massage-evt-2.vercel.app/info">
+    <meta property="og:title" content="방화 마사지 이벤트 – 상세 정보 & 예약 안내">
+    <meta property="og:description" content="방화동 마사지 이벤트 상세 정보! 가격, 코스, 예약 혜택까지 모두 공개합니다. 형님들 여기 진짜 개운합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b05-bh-massage-evt-2.vercel.app/info">
+    <meta property="og:image" content="https://t3b05-bh-massage-evt-2.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>방화 마사지 이벤트 – 정보 & 예약</title>
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Noto Sans KR', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #f5f3f0;
+            color: #1a1a1a;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+        h2 { font-size: 2rem; margin-bottom: 1.2rem; border-left: 6px solid #d63031; padding-left: 1rem; }
+        h3 { font-size: 1.4rem; margin-bottom: 0.8rem; }
+        p, li, blockquote { font-size: 1.05rem; margin-bottom: 1rem; }
+        a { color: #d63031; text-decoration: none; font-weight: 600; transition: color 0.2s; }
+        a:hover { color: #b71c1c; text-decoration: underline; }
+        strong { color: #d63031; }
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            padding: 4rem 0;
+        }
+        /* 헤더 & 네비게이션 */
+        header {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+        }
+        .logo a { color: #fff; text-decoration: none; }
+        .logo a:hover { color: #d63031; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav ul li a {
+            color: #ddd;
+            font-weight: 500;
+            padding: 0.25rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #fff;
+            border-bottom-color: #d63031;
+        }
+        /* 햄버거 메뉴 */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #fff;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a1a1a;
+                padding: 1.5rem;
+                gap: 1.2rem;
+                border-top: 2px solid #d63031;
+            }
+            nav ul.open { display: flex; }
+            nav ul li a { font-size: 1.2rem; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+        }
+        /* 히어로 */
+        .hero {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.05"><rect width="100" height="100" fill="none"/><path d="M0 50 L100 50 M50 0 L50 100" stroke="white" stroke-width="0.5"/></svg>') repeat;
+            background-size: 40px 40px;
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.85;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+        }
+        /* 카드 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border: 1px solid #e0ddd8;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            color: #d63031;
+            font-weight: 700;
+        }
+        .card .price {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin: 1rem 0;
+        }
+        .card .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #666;
+        }
+        .badge {
+            display: inline-block;
+            background: #d63031;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e0ddd8;
+        }
+        .faq-question {
+            padding: 1.2rem 1.5rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fafafa;
+            transition: background 0.2s;
+        }
+        .faq-question:hover {
+            background: #f0eee9;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: #d63031;
+            font-weight: 300;
+        }
+        .faq-answer {
+            padding: 0 1.5rem 1.2rem;
+            display: none;
+            color: #333;
+        }
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+        .faq-item.open .faq-question::after {
+            content: '−';
+        }
+        /* 푸터 */
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 2.5rem 0;
+            font-size: 0.9rem;
+        }
+        footer a { color: #ddd; }
+        footer a:hover { color: #fff; }
+        /* CTA */
+        .cta-box {
+            background: #d63031;
+            color: #fff;
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .cta-box h2 { color: #fff; border-left-color: #fff; }
+        .cta-box p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: #d63031;
+            font-weight: 800;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .cta-button:hover {
+            background: #f0f0f0;
+            transform: scale(1.03);
+        }
+        /* 테이블 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        th, td {
+            padding: 1rem 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: #1a1a1a;
+            color: #fff;
+            font-weight: 700;
+        }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: #faf8f5; }
+        @media (max-width: 768px) {
+            th, td { padding: 0.8rem; }
+        }
+    </style>
 </head>
 <body>
-  <div class="royal-glass">
-    <header style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--glass-border); padding-bottom:20px; margin-bottom:40px;">
-      <a href="index.html" style="font-size:1.4rem; font-weight:900; color:#fff; text-decoration:none; letter-spacing:-0.05em;">ROYAL<span style="color:var(--neon-cyan);">GLASS</span></a>
-      <nav style="display:flex; gap:20px;">
-        <a href="index.html" style="color:var(--text-light); text-decoration:none;">홈</a>
-        <a href="about.html" style="color:var(--neon-cyan); text-decoration:none; font-weight:700;">소개</a>
-      </nav>
+    <header>
+        <div class="container header-inner">
+            <div class="logo"><a href="/">방화마사지</a></div>
+            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info" class="active">정보</a></li>
+                    <li><a href="/event">이벤트</a></li>
+                    <li><a href="/review">후기</a></li>
+                    <li><a href="/contact">예약/문의</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-      <h1 class="bold-title">지친 육체의 밤을 안심 위생 보증 힐링 테라피로 다시 정립하다</h1>
-      
-      <div class="text-container">
-        <p>어이 브로, 방화역 개화산 벨트 뒤편의 핫플레이스 야경 뒤편에는 기만적인 가격 꼼수와 퀴퀴한 노후 샵들의 위생 해이 때문에 소중한 힐링 코스를 잡치게 만든 불신들이 도사리고 있다. 우리 Royal Glass 팀은 그저 그런 찌라시 홍보물이 아니다. 방화 직딩들의 피로와 지갑을 안전하게 수비하고, 오롯이 가성비 넘치는 고품격 테라피의 진가를 누릴 수 있도록 철저한 사전 매장 암행 평가 제도를 고집하고 있다 브로.</p>
-        
-        <p>우리는 사전에 협약한 코스 단가 외에 교묘한 옵션 강요는 단 1원도 인정하지 않는다. 직접 발로 뛰며 침구 배드 커버 스팀 소독, 마사지 타올 고온 멸균 상태, 그리고 테라피스트들의 도덕적 평판까지 정밀하게 다 통제하여 합격점을 받은 방화 최고의 힐링 성지만 비밀 라인으로 파놓았다 브로. 오늘 밤 소중한 협력사 미팅 접대나 피곤에 전 뼈마디를 녹이는 최고의 젠틀맨 케어를 보증한다.</p>
+        <section class="hero">
+            <div class="container">
+                <h1>방화 마사지 이벤트<br>상세 정보</h1>
+                <p>형님들, 궁금한 거 다 풀어드림. 가격, 코스, 시간, 예약 팁까지 싹 다 공개. 진짜 개운한 마사지, 방화동에서 만나요.</p>
+            </div>
+        </section>
 
-        <h3 style="font-size:1.35rem; color:#fff; margin:30px 0 20px 0; border-bottom:1px solid var(--glass-border); padding-bottom:8px;">방화 마곡 스마트 직딩들의 찐내돈내산 리뷰</h3>
+        <section>
+            <div class="container">
+                <h2>💆‍♂️ 대표 코스 & 가격</h2>
+                <p>모든 코스는 숙련된 테라피스트가 1:1 케어. 피로 회복에 진심인 곳입니다. 아래 가격은 <strong>이벤트 기간 한정 특가</strong>니까 놓치지 마세요!</p>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <span class="badge">🔥 인기</span>
+                        <h3>전신 마사지 (60분)</h3>
+                        <div class="price">₩50,000 <span>→ 정가 ₩70,000</span></div>
+                        <p>목, 어깨, 허리, 다리까지 전신을 시원하게 풀어드립니다. 첫 방문 고객님들께 강추!</p>
+                    </div>
+                    <div class="card">
+                        <span class="badge">✨ 베스트</span>
+                        <h3>스웨디시 마사지 (80분)</h3>
+                        <div class="price">₩75,000 <span>→ 정가 ₩100,000</span></div>
+                        <p>진정한 힐링을 원하시는 분들께. 오일로 부드럽게 풀어주는 스웨디시, 스트레스 확 날아감.</p>
+                    </div>
+                    <div class="card">
+                        <span class="badge">👑 프리미엄</span>
+                        <h3>타이 마사지 (90분)</h3>
+                        <div class="price">₩90,000 <span>→ 정가 ₩130,000</span></div>
+                        <p>몸이 뻣뻣한 형님들 집중! 스트레칭과 압박으로 근육 깊숙이까지 케어. 개운함이 다름.</p>
+                    </div>
+                </div>
 
-        <div class="review-bubble">
-          <h5>"야근에 찌든 어깨가 새로 태어남" — 임성진 (33세, 김포공항 물류 대리)</h5>
-          <p>맨날 키보드 두드리느라 목이랑 담 걸려서 방화역 마사지 샵 아무 데나 드나들다가 업셀링 바가지에 기분만 잡쳤는데, 여기 핫라인 예약 알고 간 곳은 세팅 시트 뽀송함부터 다릅니다. 관리사분 찐 혈 자리 꾹꾹이에 몸뚱이 날아갈 듯 피로 다 풀렸네요.</p>
-        </div>
+                <p style="margin-top:2rem; font-size:0.95rem; color:#666;">* 위 가격은 2025년 7월 이벤트 기간 적용 가격입니다. 방문 전 전화로 예약 여부 확인 필수!</p>
+            </div>
+        </section>
 
-        <div class="review-bubble">
-          <h5>"타올 소독 향기가 너무 산뜻해요" — 김지성 (29세, 방화동 거주)</h5>
-          <p>마사지 샵 드나들 때마다 퀴퀴한 지하 썩은 기류랑 타올 재사용 오일 찌든 냄새 정말 혐오했는데, 여긴 문 열자마자 편백나무 피톤치드 숲속 향기가 물씬 풍겨서 안심했습니다. 배드 청결함 100% 보증입니다 브로!</p>
-        </div>
-
-        <div class="review-bubble">
-          <h5>"중요 바이어 모시고 가오 세움" — 정태영 (35세, 지상 조업사 파트장)</h5>
-          <p>해외 협력사 바이어분이 피곤해하셔서 방화역 먹자골목 근처 마사지 수소문했는데 형 비밀 채널로 즉각 컨펌받고 깔끔한 최고급 1인 단독 룸으로 칼 매칭 받았습니다. 바이어분이 극찬해서 계약 미팅 성사 분위기 대박이네요.</p>
-        </div>
-
-        <p>우리 예약 핫라인 📞 010-6279-0862 로 쿨하게 통화 튕겨라. 방화의 가장 든든하고 확실한 힐링 길잡이가 되어 주마 브로!</p>
-      </div>
-    </main>
-
-    <footer>
-      <p>&copy; 2026 방화 마사지 안심 매칭 센터. All Rights Reserved.</p>
-      <p style="margin-top:16px;">
-        <a href="index.html">홈</a> | <a href="about.html">소개</a>
-      </p>
-    </footer>
-  </div>
+        <section>
+            <div class="container">
+                <h2>📋 이벤트 혜택 한눈에</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>혜택</th>
+                            <th>내용</th>
+                            <th>적용 조건</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>전화 예약 할인</strong></td>
+                            <td>전화로 예약 시 모든 코스 10% 추가 할인</td>
+                            <td>방문 전
 </body>
 </html>
